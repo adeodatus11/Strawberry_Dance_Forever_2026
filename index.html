@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strawberry Dance Forever 2026 — XIII Międzynarodowy Turniej Tańca Sportowego, Wrocław 30.05.2026</title>
+
+  <!-- SEO meta -->
+  <meta name="description" content="XIII Międzynarodowy Turniej Tańca Sportowego Strawberry Dance Forever — Wrocław, 30 maja 2026. WDSF International ST, Open LA, Youth, Junior II. Organizator: SKT Perfect Dance Wrocław." />
+  <meta name="keywords" content="Strawberry Dance Forever, turniej tańca sportowego, Wrocław 2026, WDSF, DanceSport, taniec sportowy, Perfect Dance, competition, dancesport tournament Poland" />
+  <meta name="author" content="Sportowy Klub Taneczny Perfect Dance Wrocław" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://strawberrydanceforever.pl/" />
+
+  <!-- Open Graph (Facebook, LinkedIn, udostępnianie) -->
+  <meta property="og:type" content="event" />
+  <meta property="og:title" content="Strawberry Dance Forever 2026 — Wrocław 30.05.2026" />
+  <meta property="og:description" content="XIII Międzynarodowy Turniej Tańca Sportowego. WDSF International ST · Open LA · Youth ST/LA · Junior II ST/LA. Hala Sportowa IX LO, Wrocław." />
+  <meta property="og:url" content="https://strawberrydanceforever.pl/" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:site_name" content="Strawberry Dance Forever" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Strawberry Dance Forever 2026 — Wrocław 30.05.2026" />
+  <meta name="twitter:description" content="XIII Międzynarodowy Turniej Tańca Sportowego WDSF. Wrocław, Hala Sportowa IX LO, 30 maja 2026." />
+
+  <!-- Structured data — Event (Google rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    "name": "Strawberry Dance Forever — XIII Międzynarodowy Turniej Tańca Sportowego",
+    "alternateName": "Strawberry Dance Forever 2026",
+    "description": "XIII Międzynarodowy Turniej Tańca Sportowego organizowany przez SKT Perfect Dance Wrocław. Kategorie: WDSF International ST, WDSF Open LA, WDSF Youth ST/LA, WDSF Junior II ST/LA.",
+    "startDate": "2026-05-30T09:00:00+02:00",
+    "endDate": "2026-05-30T22:00:00+02:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Hala Sportowa IX LO",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Piotra Skargi 32",
+        "addressLocality": "Wrocław",
+        "postalCode": "50-082",
+        "addressCountry": "PL"
+      }
+    },
+    "organizer": {
+      "@type": "SportsOrganization",
+      "name": "Sportowy Klub Taneczny Perfect Dance Wrocław",
+      "email": "skt.perfectdance@gmail.com",
+      "telephone": "+48605319990"
+    },
+    "sport": "DanceSport",
+    "url": "https://strawberrydanceforever.pl/"
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red:      #c0161e;
+      --red-dark: #8b0000;
+      --cream:    #f5e6d3;
+      --gold:     #c9a84c;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #111;
+      color: var(--cream);
+    }
+
+    /* ═══════════════════════════════════════
+       STRAWBERRY PATTERN  (SVG data-URI tile)
+       ═══════════════════════════════════════ */
+    .strawberry-bg {
+      background-color: #a80f17;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='38'%3E%3Crect width='44' height='38' fill='%23a80f17'/%3E%3Cpolygon points='22,2 41,19 22,36 3,19' fill='%23c41c25' stroke='%23f0b0b8' stroke-width='1.1'/%3E%3Cellipse cx='22' cy='18.5' rx='2.8' ry='4.5' fill='%23ddb030' transform='rotate(10 22 18.5)'/%3E%3C/svg%3E"),
+                         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='38'%3E%3Cpolygon points='0,0 22,19 0,38' fill='%23c41c25' stroke='%23f0b0b8' stroke-width='1.1'/%3E%3Cpolygon points='44,0 44,38 22,19' fill='%23c41c25' stroke='%23f0b0b8' stroke-width='1.1'/%3E%3C/svg%3E");
+      background-size: 44px 38px, 44px 38px;
+      background-position: 0 0, 22px 19px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10, 0, 0, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 2px solid var(--gold);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+
+    nav a {
+      color: var(--cream);
+      text-decoration: none;
+      font-family: 'Arial', sans-serif;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1rem 1.15rem;
+      border-bottom: 3px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+      white-space: nowrap;
+    }
+
+    nav a:hover { color: var(--gold); border-bottom-color: var(--gold); }
+
+    .lang-btn {
+      margin-left: auto;
+      margin-right: 0.9rem;
+      padding: 0.35rem 0.9rem;
+      background: transparent;
+      border: 1.5px solid var(--gold);
+      border-radius: 3px;
+      color: var(--gold);
+      font-family: 'Arial', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+
+    .lang-btn:hover { background: var(--gold); color: #111; }
+
+    /* ── HERO ── */
+    #home {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 1.5rem 4rem;
+      overflow: hidden;
+    }
+
+    /* Strawberry texture layer */
+    #home .sb-texture {
+      position: absolute;
+      inset: 0;
+      background-image: url('strawberry-bg.png');
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+    }
+
+    /* Dark gradient overlay on top of texture */
+    #home .sb-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 80% at 50% 40%, rgba(192,22,30,0.25) 0%, rgba(80,0,0,0.55) 60%, rgba(0,0,0,0.85) 100%),
+        linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.6) 100%);
+      z-index: 1;
+    }
+
+    #home > *:not(.sb-texture):not(.sb-overlay) { position: relative; z-index: 2; }
+
+    .hero-badge {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+      opacity: 0.92;
+    }
+
+    .hero-title {
+      font-size: clamp(3.2rem, 11vw, 7.5rem);
+      font-weight: 900;
+      font-family: 'Arial Black', 'Arial', sans-serif;
+      line-height: 0.93;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.9), 0 0 60px rgba(180,0,0,0.4);
+      margin-bottom: 0.35em;
+    }
+
+    .hero-title span { color: var(--gold); }
+
+    .hero-invite {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: clamp(0.85rem, 2vw, 1.1rem);
+      color: var(--cream);
+      opacity: 0.85;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-edition {
+      font-family: 'Arial', sans-serif;
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      opacity: 0.9;
+    }
+
+    .hero-sub {
+      font-size: clamp(0.9rem, 2.2vw, 1.35rem);
+      letter-spacing: 0.07em;
+      color: var(--cream);
+      margin-bottom: 2.5rem;
+      opacity: 0.88;
+    }
+
+    .hero-date-place {
+      background: rgba(0,0,0,0.55);
+      border: 1px solid rgba(201,168,76,0.45);
+      border-radius: 4px;
+      padding: 1.4rem 2.5rem;
+      margin-bottom: 2rem;
+      line-height: 2;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-date-place .big {
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .hero-date-place .small { font-size: 0.95rem; color: var(--cream); opacity: 0.83; }
+
+    .hero-categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .cat-tag {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.85rem;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      border-radius: 2px;
+      backdrop-filter: blur(2px);
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem;
+    }
+
+    section + section { border-top: 1px solid rgba(255,255,255,0.07); }
+
+    h2 {
+      font-family: 'Arial Black', 'Arial', sans-serif;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #fff;
+      margin-bottom: 0.3em;
+    }
+
+    .section-rule { width: 55px; height: 3px; background: var(--gold); margin-bottom: 2rem; }
+
+    p, li { line-height: 1.85; font-size: 1rem; color: #ddd; }
+
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    ul { list-style: none; padding: 0; }
+    ul li { padding: 0.22rem 0; }
+    ul li::before { content: '▸  '; color: var(--gold); font-size: 0.8em; }
+
+    .info-box {
+      background: rgba(255,255,255,0.04);
+      border-left: 3px solid var(--gold);
+      border-radius: 3px;
+      padding: 1.2rem 1.6rem;
+      margin: 1.2rem 0;
+    }
+
+    .info-box strong { color: #fff; }
+
+    .pzst-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.9rem;
+    }
+
+    .pzst-links a {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 0.4rem 0.9rem;
+      border: 1px solid rgba(201,168,76,0.45);
+      border-radius: 3px;
+      color: var(--gold);
+      transition: background 0.18s, color 0.18s;
+      white-space: nowrap;
+    }
+
+    .pzst-links a:hover {
+      background: var(--gold);
+      color: #111;
+      text-decoration: none;
+    }
+
+    .placeholder {
+      background: rgba(201,168,76,0.07);
+      border: 1px dashed rgba(201,168,76,0.4);
+      border-radius: 4px;
+      padding: 1.5rem;
+      text-align: center;
+      color: rgba(201,168,76,0.65);
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    .map-wrap {
+      margin-top: 1.5rem;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .map-wrap iframe { width: 100%; height: 300px; border: none; display: block; }
+
+    /* ── HOTELS ── */
+    .hotel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.1rem;
+      margin-top: 1.4rem;
+    }
+
+    .hotel-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 6px;
+      padding: 1.2rem 1.4rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .hotel-card:hover {
+      border-color: rgba(201,168,76,0.4);
+      background: rgba(255,255,255,0.07);
+    }
+
+    .hotel-card.featured {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.07);
+    }
+
+    .hotel-card .hotel-name {
+      font-weight: 700;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+
+    .hotel-card.featured .hotel-name { color: var(--gold); }
+
+    .hotel-badge {
+      display: inline-block;
+      font-family: 'Arial', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.18rem 0.55rem;
+      background: var(--gold);
+      color: #111;
+      border-radius: 2px;
+      width: fit-content;
+    }
+
+    .hotel-meta {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.8rem;
+      color: #bbb;
+      line-height: 1.5;
+    }
+
+    .hotel-dist {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.78rem;
+      color: #8be;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .hotel-dist::before { content: '📍'; font-size: 0.7rem; }
+
+    .hotel-links {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 0.3rem;
+    }
+
+    .hotel-links a {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.28rem 0.75rem;
+      border-radius: 3px;
+      transition: background 0.18s, color 0.18s, border-color 0.18s;
+      white-space: nowrap;
+    }
+
+    .hotel-links .btn-book {
+      background: var(--gold);
+      color: #111;
+      border: 1px solid var(--gold);
+    }
+
+    .hotel-links .btn-book:hover { background: #e0c060; border-color: #e0c060; text-decoration: none; }
+
+    .hotel-links .btn-map {
+      background: transparent;
+      color: var(--cream);
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .hotel-links .btn-map:hover { border-color: var(--cream); text-decoration: none; }
+
+    /* Fees */
+    .fee-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .fee-table th {
+      text-align: left;
+      font-family: 'Arial', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      padding: 0.6rem 1rem;
+      border-bottom: 2px solid rgba(201,168,76,0.35);
+    }
+
+    .fee-table td {
+      padding: 0.75rem 1rem;
+      color: #ddd;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .fee-table td:last-child {
+      font-weight: 700;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    .fee-table tr:hover td { background: rgba(255,255,255,0.03); }
+
+    .fee-table tr.fee-highlight td { color: var(--gold); }
+    .fee-table tr.fee-highlight td:last-child { color: var(--gold); }
+
+    .fee-section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 4px;
+      padding: 1.4rem 1.6rem;
+    }
+
+    .contact-card .name { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 0.25rem; }
+    .contact-card .role { font-size: 0.76rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.8rem; }
+    .contact-card p { font-size: 0.9rem; margin: 0.2rem 0; }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.76rem;
+      color: rgba(255,255,255,0.22);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    @media (max-width: 600px) {
+      nav a { padding: 0.75rem 0.6rem; font-size: 0.63rem; letter-spacing: 0.04em; }
+      .lang-btn { margin-left: 0.3rem; margin-right: 0.4rem; }
+      .hero-date-place { padding: 1rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#home"         data-pl="Start"           data-en="Home">Start</a>
+    <a href="#info"         data-pl="Info i przepisy"  data-en="Info & Rules">Info i przepisy</a>
+    <a href="#venue"        data-pl="Miejsce"          data-en="Venue">Miejsce</a>
+    <a href="#registration" data-pl="Rejestracja"      data-en="Registration">Rejestracja</a>
+    <a href="#fees"         data-pl="Opłaty"           data-en="Fees">Opłaty</a>
+    <a href="#hotels"       data-pl="Hotele"           data-en="Hotels">Hotele</a>
+    <a href="#contact"      data-pl="Kontakt"          data-en="Contact">Kontakt</a>
+    <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+  </nav>
+
+  <!-- HERO -->
+  <div id="home">
+    <div class="sb-texture"></div>
+    <div class="sb-overlay"></div>
+
+    <p class="hero-invite"
+       data-pl="Sportowy Klub Taneczny Perfect Dance Wrocław zaprasza na"
+       data-en="Sportowy Klub Taneczny Perfect Dance Wrocław invites you to">
+      Sportowy Klub Taneczny Perfect Dance Wrocław zaprasza na
+    </p>
+    <p class="hero-edition"
+       data-pl="XIII Międzynarodowy Turniej Tańca Sportowego"
+       data-en="13th International DanceSport Tournament">
+      XIII Międzynarodowy Turniej Tańca Sportowego
+    </p>
+    <h1 class="hero-title">Strawberry<br><span>Dance</span><br>Forever</h1>
+    <p class="hero-badge">Wrocław · Polska · 30 maja 2026</p>
+
+    <div class="hero-date-place">
+      <div class="big">30 / 05 / 2026</div>
+      <div class="small">Hala Sportowa IX LO &nbsp;·&nbsp; ul. Piotra Skargi 32, Wrocław</div>
+      <div class="small" style="margin-top:0.3rem;"
+           data-pl="Początek turnieju — godz. 9:00 &nbsp;·&nbsp; Gala wieczorna — godz. 18:00"
+           data-en="Tournament start — 9:00 &nbsp;·&nbsp; Evening Gala — 18:00">
+        Początek turnieju — godz. 9:00 &nbsp;·&nbsp; Gala wieczorna — godz. 18:00
+      </div>
+    </div>
+
+    <div class="hero-categories">
+      <span class="cat-tag">WDSF International ST</span>
+      <span class="cat-tag">WDSF Open LA</span>
+      <span class="cat-tag">WDSF Youth ST/LA</span>
+      <span class="cat-tag">WDSF Junior II ST/LA</span>
+    </div>
+  </div>
+
+  <!-- INFO & RULES -->
+  <section id="info">
+    <h2 data-pl="Info i przepisy" data-en="Info &amp; Competition Rules">Info i przepisy</h2>
+    <div class="section-rule"></div>
+    <p data-pl="Zawody odbywają się zgodnie z przepisami <strong>World DanceSport Federation (WDSF)</strong> oraz <strong>Polskiego Związku Sportu Tanecznego (PZST)</strong>."
+       data-en="The competition is held in accordance with the rules of the <strong>World DanceSport Federation (WDSF)</strong> and the <strong>Polski Związek Sportu Tanecznego (PZST)</strong>.">
+      Zawody odbywają się zgodnie z przepisami <strong>World DanceSport Federation (WDSF)</strong> oraz <strong>Polskiego Związku Sportu Tanecznego (PZST)</strong>.
+    </p>
+    <div class="info-box" style="margin-top:1.5rem;">
+      <strong data-pl="Oficjalna strona turnieju (PZST):" data-en="Official tournament page (PZST):">Oficjalna strona turnieju (PZST):</strong>
+      <div class="pzst-links">
+        <a href="https://baza.polskitaniec.org/reg/50001036/pl/" target="_blank" rel="noopener"
+           data-pl="🏠 Strona główna" data-en="🏠 Home">🏠 Strona główna</a>
+        <a href="https://baza.polskitaniec.org/reg/50001036/r" target="_blank" rel="noopener"
+           data-pl="📝 Rejestracja" data-en="📝 Registration">📝 Rejestracja</a>
+        <a href="https://baza.polskitaniec.org/reg/2026/50001036.pdf?d=2026050409" target="_blank" rel="noopener"
+           data-pl="📄 Regulamin (PDF)" data-en="📄 Regulations (PDF)">📄 Regulamin (PDF)</a>
+        <a href="https://baza.polskitaniec.org/reg/50001036/judges" target="_blank" rel="noopener"
+           data-pl="⚖️ Sędziowie" data-en="⚖️ Judges">⚖️ Sędziowie</a>
+        <a href="https://baza.polskitaniec.org/reg/50001036/list" target="_blank" rel="noopener"
+           data-pl="📋 Listy startowe" data-en="📋 Starting lists">📋 Listy startowe</a>
+      </div>
+    </div>
+    <p style="margin-top:1.2rem;"
+       data-pl="Organizatorem jest <strong>Sportowy Klub Taneczny Perfect Dance Wrocław</strong>.<br>W sprawie pytań ogólnych zapraszamy do sekcji <a href='#contact'>Kontakt</a>."
+       data-en="The organizing club is <strong>Sportowy Klub Taneczny Perfect Dance Wrocław</strong>.<br>For general inquiries please see the <a href='#contact'>Contact</a> section.">
+      Organizatorem jest <strong>Sportowy Klub Taneczny Perfect Dance Wrocław</strong>.<br>
+      W sprawie pytań ogólnych zapraszamy do sekcji <a href="#contact">Kontakt</a>.
+    </p>
+  </section>
+
+  <!-- VENUE -->
+  <section id="venue">
+    <h2 data-pl="Miejsce turnieju" data-en="Venue">Miejsce turnieju</h2>
+    <div class="section-rule"></div>
+
+    <div class="info-box">
+      <strong>Hala Sportowa IX LO</strong><br>
+      ul. Piotra Skargi 32, 50-082 Wrocław<br><br>
+      <span data-pl="<strong>Wejście / wjazd:</strong> od ul. Nowej"
+            data-en="<strong>Entrance / vehicle access:</strong> from ul. Nowa">
+        <strong>Wejście / wjazd:</strong> od ul. Nowej
+      </span>
+    </div>
+
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.8!2d17.0294!3d51.1089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c2d4b5e6d5%3A0x1!2sul.%20Piotra%20Skargi%2032%2C%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa miejsca turnieju">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- REGISTRATION -->
+  <section id="registration">
+    <h2 data-pl="Rejestracja" data-en="Registration">Rejestracja</h2>
+    <div class="section-rule"></div>
+
+    <div class="info-box">
+      <strong data-pl="Termin zgłoszeń:" data-en="Registration deadline:">Termin zgłoszeń:</strong><br>
+      <span style="font-size:1.25rem; color:#fff;">26 maja 2026 &nbsp;·&nbsp; godz. 23:59 (CET)</span>
+    </div>
+
+    <p style="margin-top:1rem;"
+       data-pl="Zgłoszenia niekompletne lub złożone po terminie mogą nie zostać uwzględnione. Prosimy o dopilnowanie, aby wszystkie wymagane informacje zostały przesłane przed upływem terminu."
+       data-en="Late or incomplete registrations may not be accepted. Please ensure all required information is submitted before the deadline.">
+      Zgłoszenia niekompletne lub złożone po terminie mogą nie zostać uwzględnione.
+      Prosimy o dopilnowanie, aby wszystkie wymagane informacje zostały przesłane przed upływem terminu.
+    </p>
+
+    <div style="margin-top:1.5rem; text-align:center;">
+      <a href="https://baza.polskitaniec.org/reg/50001036/r"
+         target="_blank" rel="noopener"
+         style="display:inline-block; font-family:'Arial',sans-serif; font-size:1rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.9rem 2.5rem; background:var(--gold); color:#111; border-radius:4px; transition:background 0.2s;"
+         onmouseover="this.style.background='#e0c060'" onmouseout="this.style.background='var(--gold)'"
+         data-pl="Zarejestruj się →" data-en="Register now →">Zarejestruj się →</a>
+    </div>
+  </section>
+
+  <!-- FEES -->
+  <section id="fees">
+    <h2 data-pl="Opłaty" data-en="Fees">Opłaty</h2>
+    <div class="section-rule"></div>
+
+    <table class="fee-table">
+      <thead>
+        <tr>
+          <th data-pl="Kategoria" data-en="Category">Kategoria</th>
+          <th data-pl="Opłata" data-en="Fee">Opłata</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-pl="SOLO — 1 styl" data-en="SOLO — 1 style">SOLO — 1 styl</td>
+          <td>80 PLN</td>
+        </tr>
+        <tr>
+          <td data-pl="SOLO — kombinacje" data-en="SOLO — combinations">SOLO — kombinacje</td>
+          <td>120 PLN</td>
+        </tr>
+        <tr>
+          <td data-pl="Kategorie klasowe i Open — 1 styl / para" data-en="Class &amp; Open categories — 1 style / couple">Kategorie klasowe i Open — 1 styl / para</td>
+          <td>120 PLN</td>
+        </tr>
+        <tr class="fee-highlight">
+          <td data-pl="WDSF Junior II — 1 styl / para" data-en="WDSF Junior II — 1 style / couple">WDSF Junior II — 1 styl / para</td>
+          <td>200 PLN</td>
+        </tr>
+        <tr class="fee-highlight">
+          <td data-pl="WDSF Youth / Adult — 1 styl / para" data-en="WDSF Youth / Adult — 1 style / couple">WDSF Youth / Adult — 1 styl / para</td>
+          <td>250 PLN</td>
+        </tr>
+        <tr>
+          <td data-pl="Każda dodatkowa kategoria WDSF / para" data-en="Each additional WDSF category / couple">Każda dodatkowa kategoria WDSF / para</td>
+          <td>120 PLN</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="fee-section-grid">
+      <div class="info-box">
+        <strong data-pl="Widzowie" data-en="Spectators">Widzowie</strong><br>
+        <span data-pl="Bilet wstępu (cały dzień): <strong>80 PLN / osoba</strong>"
+              data-en="Day ticket: <strong>80 PLN / person</strong>">
+          Bilet wstępu (cały dzień): <strong>80 PLN / osoba</strong>
+        </span><br>
+        <span data-pl="Miejsce przy stoliku: <strong>150 PLN</strong>"
+              data-en="Table seat: <strong>150 PLN</strong>">
+          Miejsce przy stoliku: <strong>150 PLN</strong>
+        </span><br>
+        <span style="font-size:0.85rem; color:#aaa; margin-top:0.4rem; display:block;"
+              data-pl="Rezerwacje stolików: <a href='mailto:michalfelzenowski@gmail.com'>michalfelzenowski@gmail.com</a>"
+              data-en="Table reservations: <a href='mailto:michalfelzenowski@gmail.com'>michalfelzenowski@gmail.com</a>">
+          Rezerwacje stolików: <a href="mailto:michalfelzenowski@gmail.com">michalfelzenowski@gmail.com</a>
+        </span>
+      </div>
+
+      <div class="info-box">
+        <strong data-pl="Płatność (pary polskie)" data-en="Payment (Polish couples)">Płatność (pary polskie)</strong><br>
+        <span style="font-size:0.85rem; line-height:1.9;">
+          Bank Millennium<br>
+          <span data-pl="Odbiorca:" data-en="Recipient:">Odbiorca:</span> <strong>EDUART</strong><br>
+          <span data-pl="Nr konta:" data-en="Account no.:">Nr konta:</span> <strong>46&nbsp;1160&nbsp;2202&nbsp;0000&nbsp;0000&nbsp;4170&nbsp;4574</strong><br>
+          <span style="color:#aaa; font-size:0.8rem;"
+                data-pl="Płatność za całą parę (nie za osobę). W tytule: dane pary."
+                data-en="Payment per couple (not per person). Title: couple's name.">
+            Płatność za całą parę (nie za osobę). W tytule: dane pary.
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <p style="margin-top:1rem; font-size:0.85rem; color:#aaa;"
+       data-pl="⚠ Opłaty online przez system PZST nie są dostępne dla tego turnieju."
+       data-en="⚠ Online payment via the PZST system is not available for this tournament.">
+      ⚠ Opłaty online przez system PZST nie są dostępne dla tego turnieju.
+    </p>
+  </section>
+
+  <!-- HOTELS -->
+  <section id="hotels">
+    <h2 data-pl="Hotele" data-en="Hotels">Hotele</h2>
+    <div class="section-rule"></div>
+
+    <p data-pl="Poniżej znajdą Państwo oficjalny hotel turnieju oraz rekomendowane zakwaterowanie w okolicy. Kliknij <strong>Mapa</strong>, aby zobaczyć lokalizację, lub <strong>Rezerwuj</strong>, aby przejść do strony hotelu."
+       data-en="Our official tournament hotel and recommended accommodations nearby. Click <strong>Map</strong> to see the location, or <strong>Book</strong> to visit the hotel's website.">
+      Poniżej znajdą Państwo oficjalny hotel turnieju oraz rekomendowane zakwaterowanie w okolicy.
+      Kliknij <strong>Mapa</strong>, aby zobaczyć lokalizację, lub <strong>Rezerwuj</strong>, aby przejść do strony hotelu.
+    </p>
+
+    <div class="hotel-grid">
+
+      <!-- 1 Altus Palace — official -->
+      <div class="hotel-card featured">
+        <span class="hotel-badge"
+              data-pl="Oficjalny hotel turnieju"
+              data-en="Official Tournament Hotel">Oficjalny hotel turnieju</span>
+        <div class="hotel-name">Altus Palace</div>
+        <div class="hotel-meta">ul. Wierzbowa 15, Wrocław</div>
+        <div class="hotel-dist"
+             data-pl="ok. 350 m pieszo od hali (5 min)"
+             data-en="approx. 350 m walk from the venue (5 min)">ok. 350 m pieszo od hali (5 min)</div>
+        <div class="hotel-links">
+          <a class="btn-book" href="https://www.hotelaltuspalace.pl/" target="_blank" rel="noopener"
+             data-pl="Rezerwuj" data-en="Book">Rezerwuj</a>
+          <a class="btn-map" href="https://www.google.com/maps/dir/?api=1&origin=Wierzbowa+15+Wroc%C5%82aw&destination=ul.+Piotra+Skargi+32%2C+Wroc%C5%82aw&travelmode=walking" target="_blank" rel="noopener"
+             data-pl="Trasa pieszo" data-en="Walking route">Trasa pieszo</a>
+        </div>
+      </div>
+
+      <!-- 2 B&B -->
+      <div class="hotel-card">
+        <div class="hotel-name">B&amp;B Hotel Wrocław Centrum</div>
+        <div class="hotel-meta">ul. Piotra Skargi 2, Wrocław</div>
+        <div class="hotel-dist"
+             data-pl="ok. 300 m pieszo od hali (4 min)"
+             data-en="approx. 300 m walk from the venue (4 min)">ok. 300 m pieszo od hali (4 min)</div>
+        <div class="hotel-links">
+          <a class="btn-book" href="https://www.hotel-bb.com/en/hotel/wroclaw-centrum" target="_blank" rel="noopener"
+             data-pl="Rezerwuj" data-en="Book">Rezerwuj</a>
+          <a class="btn-map" href="https://www.google.com/maps/dir/?api=1&origin=Piotra+Skargi+2+Wroc%C5%82aw&destination=ul.+Piotra+Skargi+32%2C+Wroc%C5%82aw&travelmode=walking" target="_blank" rel="noopener"
+             data-pl="Trasa pieszo" data-en="Walking route">Trasa pieszo</a>
+        </div>
+      </div>
+
+      <!-- 3 Hotel Piast -->
+      <div class="hotel-card">
+        <div class="hotel-name">Hotel Piast Wrocław</div>
+        <div class="hotel-meta">ul. Piłsudskiego 98, Wrocław</div>
+        <div class="hotel-dist"
+             data-pl="ok. 550 m pieszo od hali (7 min)"
+             data-en="approx. 550 m walk from the venue (7 min)">ok. 550 m pieszo od hali (7 min)</div>
+        <div class="hotel-links">
+          <a class="btn-book" href="https://www.booking.com/hotel/pl/hotel-piast-wroclaw-centrum.html" target="_blank" rel="noopener"
+             data-pl="Rezerwuj" data-en="Book">Rezerwuj</a>
+          <a class="btn-map" href="https://www.google.com/maps/dir/?api=1&origin=Pi%C5%82sudskiego+98+Wroc%C5%82aw&destination=ul.+Piotra+Skargi+32%2C+Wroc%C5%82aw&travelmode=walking" target="_blank" rel="noopener"
+             data-pl="Trasa pieszo" data-en="Walking route">Trasa pieszo</a>
+        </div>
+      </div>
+
+      <!-- 4 Rynek 30 -->
+      <div class="hotel-card">
+        <div class="hotel-name">Rynek 30 Hostel Wrocław</div>
+        <div class="hotel-meta">Rynek 30, Wrocław</div>
+        <div class="hotel-dist"
+             data-pl="ok. 900 m pieszo od hali (12 min)"
+             data-en="approx. 900 m walk from the venue (12 min)">ok. 900 m pieszo od hali (12 min)</div>
+        <div class="hotel-links">
+          <a class="btn-book" href="https://rynek30.pl/zarezerwuj/" target="_blank" rel="noopener"
+             data-pl="Rezerwuj" data-en="Book">Rezerwuj</a>
+          <a class="btn-map" href="https://www.google.com/maps/dir/?api=1&origin=Rynek+30+Wroc%C5%82aw&destination=ul.+Piotra+Skargi+32%2C+Wroc%C5%82aw&travelmode=walking" target="_blank" rel="noopener"
+             data-pl="Trasa pieszo" data-en="Walking route">Trasa pieszo</a>
+        </div>
+      </div>
+
+      <!-- 5 Boogie -->
+      <div class="hotel-card">
+        <div class="hotel-name">Boogie Aparthouse</div>
+        <div class="hotel-meta">ul. Garbary 2, Wrocław</div>
+        <div class="hotel-dist"
+             data-pl="ok. 1,4 km pieszo od hali (19 min)"
+             data-en="approx. 1.4 km walk from the venue (19 min)">ok. 1,4 km pieszo od hali (19 min)</div>
+        <div class="hotel-links">
+          <a class="btn-book" href="https://boogieapart.pl/en/boogie-aparthouse-2/" target="_blank" rel="noopener"
+             data-pl="Rezerwuj" data-en="Book">Rezerwuj</a>
+          <a class="btn-map" href="https://www.google.com/maps/dir/?api=1&origin=Garbary+2+Wroc%C5%82aw&destination=ul.+Piotra+Skargi+32%2C+Wroc%C5%82aw&travelmode=walking" target="_blank" rel="noopener"
+             data-pl="Trasa pieszo" data-en="Walking route">Trasa pieszo</a>
+        </div>
+      </div>
+
+      <!-- 6 Campanile Stare Miasto -->
+      <div class="hotel-card">
+        <div class="hotel-name">Campanile Wrocław Stare Miasto</div>
+        <div class="hotel-meta">ul. Jagiełły 7, Wrocław</div>
+        <div class="hotel-dist"
+             data-pl="ok. 2,1 km pieszo od hali (28 min)"
+             data-en="approx. 2.1 km walk from the venue (28 min)">ok. 2,1 km pieszo od hali (28 min)</div>
+        <div class="hotel-links">
+          <a class="btn-book" href="https://wroclaw-stare-miasto.campanile.com/en-us/" target="_blank" rel="noopener"
+             data-pl="Rezerwuj" data-en="Book">Rezerwuj</a>
+          <a class="btn-map" href="https://www.google.com/maps/dir/?api=1&origin=Jagie%C5%82%C5%82y+7+Wroc%C5%82aw&destination=ul.+Piotra+Skargi+32%2C+Wroc%C5%82aw&travelmode=walking" target="_blank" rel="noopener"
+             data-pl="Trasa pieszo" data-en="Walking route">Trasa pieszo</a>
+        </div>
+      </div>
+
+      <!-- 7 Scandic -->
+      <div class="hotel-card">
+        <div class="hotel-name">Scandic Hotel Wrocław</div>
+        <div class="hotel-meta">ul. Piłsudskiego 53–57, Wrocław</div>
+        <div class="hotel-dist"
+             data-pl="ok. 900 m pieszo od hali (12 min)"
+             data-en="approx. 900 m walk from the venue (12 min)">ok. 900 m pieszo od hali (12 min)</div>
+        <div class="hotel-links">
+          <a class="btn-book" href="https://www.scandichotels.com/en/hotels/scandic-wroclaw" target="_blank" rel="noopener"
+             data-pl="Rezerwuj" data-en="Book">Rezerwuj</a>
+          <a class="btn-map" href="https://www.google.com/maps/dir/?api=1&origin=Pi%C5%82sudskiego+53+Wroc%C5%82aw&destination=ul.+Piotra+Skargi+32%2C+Wroc%C5%82aw&travelmode=walking" target="_blank" rel="noopener"
+             data-pl="Trasa pieszo" data-en="Walking route">Trasa pieszo</a>
+        </div>
+      </div>
+
+      <!-- 8 Mercure -->
+      <div class="hotel-card">
+        <div class="hotel-name">Hotel Mercure Wrocław Centrum</div>
+        <div class="hotel-meta">pl. Dominikański 1, Wrocław</div>
+        <div class="hotel-dist"
+             data-pl="ok. 650 m pieszo od hali (9 min)"
+             data-en="approx. 650 m walk from the venue (9 min)">ok. 650 m pieszo od hali (9 min)</div>
+        <div class="hotel-links">
+          <a class="btn-book" href="https://all.accor.com/hotel/3374/index.en.shtml" target="_blank" rel="noopener"
+             data-pl="Rezerwuj" data-en="Book">Rezerwuj</a>
+          <a class="btn-map" href="https://www.google.com/maps/dir/?api=1&origin=Plac+Dominika%C5%84ski+1+Wroc%C5%82aw&destination=ul.+Piotra+Skargi+32%2C+Wroc%C5%82aw&travelmode=walking" target="_blank" rel="noopener"
+             data-pl="Trasa pieszo" data-en="Walking route">Trasa pieszo</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 data-pl="Kontakt" data-en="Contact">Kontakt</h2>
+    <div class="section-rule"></div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="role"
+             data-pl="Kontakt z organizatorem"
+             data-en="Tournament Organizer">Kontakt z organizatorem</div>
+        <p>Mobile: <a href="tel:+48605319990">+48 605 319 990</a></p>
+        <p><a href="mailto:skt.perfectdance@gmail.com">skt.perfectdance@gmail.com</a></p>
+        <p><a href="mailto:alicja.majewska@icloud.com">alicja.majewska@icloud.com</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="name">Michał Felzenowski</div>
+        <p>Mobile: <a href="tel:+48793140709">+48 793 140 709</a></p>
+        <p><a href="mailto:michalfelzenowski@gmail.com">michalfelzenowski@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Sportowy Klub Taneczny Perfect Dance Wrocław &nbsp;·&nbsp;
+    <a href="mailto:skt.perfectdance@gmail.com">skt.perfectdance@gmail.com</a>
+  </footer>
+
+  <script>
+    let currentLang = 'pl';
+
+    function toggleLang() {
+      currentLang = currentLang === 'pl' ? 'en' : 'pl';
+      applyLang(currentLang);
+      document.getElementById('langBtn').textContent = currentLang === 'pl' ? 'EN' : 'PL';
+      document.documentElement.lang = currentLang;
+
+      document.querySelector('.hero-badge').textContent = currentLang === 'pl'
+        ? 'Wrocław · Polska · 30 maja 2026'
+        : 'Wrocław · Poland · 30 May 2026';
+    }
+
+    function applyLang(lang) {
+      document.querySelectorAll('[data-pl][data-en]').forEach(el => {
+        const val = el.getAttribute('data-' + lang);
+        if (val !== null) el.innerHTML = val;
+      });
+    }
+  </script>
+
+</body>
+</html>
