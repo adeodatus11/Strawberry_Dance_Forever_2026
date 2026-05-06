@@ -161,13 +161,13 @@
       z-index: 0;
     }
 
-    /* Dark gradient overlay on top of texture */
+    /* Dark gradient overlay on top of texture — lighter, warmer tone */
     #home .sb-overlay {
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 70% 80% at 50% 40%, rgba(192,22,30,0.25) 0%, rgba(80,0,0,0.55) 60%, rgba(0,0,0,0.85) 100%),
-        linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.6) 100%);
+        radial-gradient(ellipse 70% 80% at 50% 40%, rgba(200,30,30,0.18) 0%, rgba(120,10,10,0.42) 60%, rgba(20,0,0,0.72) 100%),
+        linear-gradient(to bottom, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.45) 100%);
       z-index: 1;
     }
 
@@ -535,10 +535,64 @@
       border-top: 1px solid rgba(255,255,255,0.06);
     }
 
+    /* ── LOGOS SECTION ── */
+    #logos {
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .logos-row-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .logos-row-main img {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      /* Wrocław logo has transparent bg — force white for dark site */
+      filter: brightness(0) invert(1);
+      opacity: 0.92;
+    }
+
+    .logos-row-partners {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2.5rem 3rem;
+    }
+
+    .logos-row-partners img {
+      height: 52px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.72;
+      transition: opacity 0.2s;
+    }
+
+    .logos-row-partners img:hover { opacity: 1; }
+
     @media (max-width: 600px) {
-      nav a { padding: 0.75rem 0.6rem; font-size: 0.63rem; letter-spacing: 0.04em; }
-      .lang-btn { margin-left: 0.3rem; margin-right: 0.4rem; }
+      nav { position: relative; }
+      nav a { padding: 0.75rem 0.55rem; font-size: 0.62rem; letter-spacing: 0.03em; }
+      .lang-btn {
+        position: absolute;
+        top: 0.55rem;
+        right: 0.7rem;
+        margin: 0;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+        background: var(--gold);
+        color: #111;
+        border-color: var(--gold);
+        z-index: 10;
+      }
+      .lang-btn:hover { background: #e0c060; border-color: #e0c060; }
       .hero-date-place { padding: 1rem 1.2rem; }
+      .logos-row-main img { max-width: 220px; }
+      .logos-row-partners img { height: 38px; }
     }
   </style>
 </head>
@@ -918,9 +972,26 @@
     </div>
   </section>
 
+  <!-- LOGOS -->
+  <section id="logos">
+    <div class="logos-row-main">
+      <img src="Wroc%C5%82aw%20miasto%20spotka%C5%84.png" alt="Wrocław Miasto Spotkań">
+    </div>
+    <div class="logos-row-partners">
+      <img src="WDSF.png" alt="WDSF">
+      <img src="pzst%20logo%20z%20czarnym.png" alt="PZST">
+      <img src="DZST.png" alt="DZST">
+    </div>
+  </section>
+
   <footer>
-    &copy; 2026 Sportowy Klub Taneczny Perfect Dance Wrocław &nbsp;·&nbsp;
-    <a href="mailto:skt.perfectdance@gmail.com">skt.perfectdance@gmail.com</a>
+    <div>
+      &copy; 2026 Sportowy Klub Taneczny Perfect Dance Wrocław &nbsp;·&nbsp;
+      <a href="mailto:skt.perfectdance@gmail.com">skt.perfectdance@gmail.com</a>
+    </div>
+    <div style="margin-top:0.5rem; font-size:0.68rem; color:rgba(255,255,255,0.15);">
+      Strona: MN &nbsp;·&nbsp; <a href="mailto:maciejnajwer@gmail.com" style="color:rgba(255,255,255,0.2);">maciejnajwer@gmail.com</a>
+    </div>
   </footer>
 
   <script>
