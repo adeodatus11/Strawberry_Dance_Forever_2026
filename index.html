@@ -177,67 +177,78 @@
       z-index: 1;
     }
 
-    /* Hero two-column layout */
-    .hero-layout {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 3.5rem;
-      width: 100%;
-      max-width: 1100px;
-    }
+    /* Hero elements — all stacked centred, z-index via parent */
+    #home > * { position: relative; z-index: 2; }
+    #home .sb-texture,
+    #home .sb-overlay { position: absolute; z-index: 0; }
+    #home .sb-overlay { z-index: 1; }
 
-    .hero-content {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    /* Logo sidebar in hero */
-    .hero-logos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.6rem;
-      flex-shrink: 0;
-    }
-
-    .hero-logo-link { display: block; line-height: 0; }
-
-    .hero-logos .logo-wroc img {
-      width: 210px;
-      height: auto;
-      filter: brightness(0) invert(1);
-      opacity: 0.88;
-      transition: opacity 0.2s;
-    }
-
-    .hero-logos .logo-partner img {
-      height: 46px;
-      width: auto;
-      filter: brightness(0) invert(1);
-      opacity: 0.65;
-      transition: opacity 0.2s;
-    }
-
-    .hero-logo-link:hover img { opacity: 1; }
-
-    .hero-logos .logo-divider {
-      width: 1px;
-      height: 28px;
-      background: rgba(255,255,255,0.18);
-      display: none; /* hidden by default, shown between partners */
-    }
-
-    .hero-logos-partners {
+    /* ── Logos block at top of hero ── */
+    .hero-logos-top {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 1.2rem;
+      margin-bottom: 2.8rem;
+    }
+
+    .hero-logo-link { display: block; line-height: 0; }
+    .hero-logo-link:hover img { opacity: 1 !important; }
+
+    .logo-wroc img {
+      width: 340px;
+      height: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+
+    .hero-logos-partners {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2.4rem;
+    }
+
+    .logo-partner img {
+      height: 56px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.72;
+      transition: opacity 0.2s;
+    }
+
+    /* ── Hero title — 2 lines, equal width ── */
+    .hero-title {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: stretch;
+      font-weight: 900;
+      font-family: 'Arial Black', 'Arial', sans-serif;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.9), 0 0 60px rgba(180,0,0,0.4);
+      margin-bottom: 0.35em;
+    }
+
+    /* STRAWBERRY — stretched with letter-spacing to match DANCE FOREVER width */
+    .hero-title .tl1 {
+      font-size: clamp(2.4rem, 7.8vw, 5.6rem);
+      letter-spacing: 0.19em;
+      padding-right: 0.19em; /* compensate trailing spacing so it centres properly */
+      color: #fff;
+      text-align: center;
+    }
+
+    /* DANCE FOREVER — reference width */
+    .hero-title .tl2 {
+      font-size: clamp(2.4rem, 7.8vw, 5.6rem);
+      letter-spacing: 0.04em;
+      padding-right: 0.04em;
+      color: var(--gold);
+      text-align: center;
     }
 
     .hero-badge {
@@ -662,23 +673,10 @@
       }
       .lang-btn:hover { background: var(--gold); color: #111; }
 
-      /* Hero — stack vertically */
-      .hero-layout {
-        flex-direction: column;
-        gap: 2rem;
-      }
-      .hero-logos {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem 1.8rem;
-      }
-      .hero-logos .logo-wroc img { width: 160px; }
-      .hero-logos .logo-partner img { height: 32px; }
-      .hero-logos-partners {
-        flex-direction: row;
-        gap: 1.2rem;
-      }
+      /* Hero logos — bigger on mobile */
+      .logo-wroc img { width: 240px; }
+      .logo-partner img { height: 44px; }
+      .hero-logos-partners { gap: 1.4rem; }
       .hero-date-place { padding: 1rem 1.2rem; }
       .logos-row-main img { max-width: 220px; }
       .logos-row-partners img { height: 38px; }
@@ -706,57 +704,56 @@
     <div class="sb-texture"></div>
     <div class="sb-overlay"></div>
 
-    <div class="hero-layout">
-      <!-- Main content -->
-      <div class="hero-content">
-        <p class="hero-invite"
-           data-pl="Sportowy Klub Taneczny Perfect Dance Wrocław zaprasza na"
-           data-en="Sportowy Klub Taneczny Perfect Dance Wrocław invites you to">
-          Sportowy Klub Taneczny Perfect Dance Wrocław zaprasza na
-        </p>
-        <p class="hero-edition"
-           data-pl="XIII Międzynarodowy Turniej Tańca Sportowego"
-           data-en="13th International DanceSport Tournament">
-          XIII Międzynarodowy Turniej Tańca Sportowego
-        </p>
-        <h1 class="hero-title">Strawberry<br><span>Dance</span><br>Forever</h1>
-        <p class="hero-badge">Wrocław · Polska · 30 maja 2026</p>
-
-        <div class="hero-date-place">
-          <div class="big">30 / 05 / 2026</div>
-          <div class="small">Hala Sportowa IX LO &nbsp;·&nbsp; ul. Piotra Skargi 32, Wrocław</div>
-          <div class="small" style="margin-top:0.3rem;"
-               data-pl="Początek turnieju — godz. 9:00 &nbsp;·&nbsp; Gala wieczorna — godz. 18:00"
-               data-en="Tournament start — 9:00 &nbsp;·&nbsp; Evening Gala — 18:00">
-            Początek turnieju — godz. 9:00 &nbsp;·&nbsp; Gala wieczorna — godz. 18:00
-          </div>
-        </div>
-
-        <div class="hero-categories">
-          <span class="cat-tag">WDSF International ST</span>
-          <span class="cat-tag">WDSF Open LA</span>
-          <span class="cat-tag">WDSF Youth ST/LA</span>
-          <span class="cat-tag">WDSF Junior II ST/LA</span>
-        </div>
-      </div>
-
-      <!-- Logos sidebar -->
-      <div class="hero-logos">
-        <a class="hero-logo-link logo-wroc" href="https://www.wroclaw.pl/" target="_blank" rel="noopener" aria-label="Wrocław Miasto Spotkań">
-          <img src="Wroc%C5%82aw%20miasto%20spotka%C5%84.png" alt="Wrocław Miasto Spotkań">
+    <!-- Logos: Wrocław on top, 3 federations below -->
+    <div class="hero-logos-top">
+      <a class="hero-logo-link logo-wroc" href="https://www.wroclaw.pl/" target="_blank" rel="noopener" aria-label="Wrocław Miasto Spotkań">
+        <img src="Wroc%C5%82aw%20miasto%20spotka%C5%84.png" alt="Wrocław Miasto Spotkań">
+      </a>
+      <div class="hero-logos-partners">
+        <a class="hero-logo-link logo-partner" href="https://www.worlddancesport.org/" target="_blank" rel="noopener" aria-label="WDSF">
+          <img src="WDSF.png" alt="WDSF">
         </a>
-        <div class="hero-logos-partners">
-          <a class="hero-logo-link logo-partner" href="https://www.worlddancesport.org/" target="_blank" rel="noopener" aria-label="WDSF">
-            <img src="WDSF.png" alt="WDSF">
-          </a>
-          <a class="hero-logo-link logo-partner" href="https://www.polskitaniec.org/" target="_blank" rel="noopener" aria-label="PZST">
-            <img src="pzst%20logo%20z%20czarnym.png" alt="PZST">
-          </a>
-          <a class="hero-logo-link logo-partner" href="https://dzst.pl/" target="_blank" rel="noopener" aria-label="DZST">
-            <img src="DZST.png" alt="DZST">
-          </a>
-        </div>
+        <a class="hero-logo-link logo-partner" href="https://www.polskitaniec.org/" target="_blank" rel="noopener" aria-label="PZST">
+          <img src="pzst%20logo%20z%20czarnym.png" alt="PZST">
+        </a>
+        <a class="hero-logo-link logo-partner" href="https://dzst.pl/" target="_blank" rel="noopener" aria-label="DZST">
+          <img src="DZST.png" alt="DZST">
+        </a>
       </div>
+    </div>
+
+    <!-- Text content -->
+    <p class="hero-invite"
+       data-pl="Sportowy Klub Taneczny Perfect Dance Wrocław zaprasza na"
+       data-en="Sportowy Klub Taneczny Perfect Dance Wrocław invites you to">
+      Sportowy Klub Taneczny Perfect Dance Wrocław zaprasza na
+    </p>
+    <p class="hero-edition"
+       data-pl="XIII Międzynarodowy Turniej Tańca Sportowego"
+       data-en="13th International DanceSport Tournament">
+      XIII Międzynarodowy Turniej Tańca Sportowego
+    </p>
+    <h1 class="hero-title">
+      <span class="tl1">Strawberry</span>
+      <span class="tl2">Dance Forever</span>
+    </h1>
+    <p class="hero-badge">Wrocław · Polska · 30 maja 2026</p>
+
+    <div class="hero-date-place">
+      <div class="big">30 / 05 / 2026</div>
+      <div class="small">Hala Sportowa IX LO &nbsp;·&nbsp; ul. Piotra Skargi 32, Wrocław</div>
+      <div class="small" style="margin-top:0.3rem;"
+           data-pl="Początek turnieju — godz. 9:00 &nbsp;·&nbsp; Gala wieczorna — godz. 18:00"
+           data-en="Tournament start — 9:00 &nbsp;·&nbsp; Evening Gala — 18:00">
+        Początek turnieju — godz. 9:00 &nbsp;·&nbsp; Gala wieczorna — godz. 18:00
+      </div>
+    </div>
+
+    <div class="hero-categories">
+      <span class="cat-tag">WDSF International ST</span>
+      <span class="cat-tag">WDSF Open LA</span>
+      <span class="cat-tag">WDSF Youth ST/LA</span>
+      <span class="cat-tag">WDSF Junior II ST/LA</span>
     </div>
   </div>
 
