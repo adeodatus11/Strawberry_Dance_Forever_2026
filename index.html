@@ -512,9 +512,20 @@
       padding: 1.4rem 1.6rem;
     }
 
+    .contact-card-inner { display: flex; align-items: flex-start; gap: 1rem; }
+    .contact-card-info { flex: 1; }
     .contact-card .name { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 0.25rem; }
     .contact-card .role { font-size: 0.76rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.8rem; }
     .contact-card p { font-size: 0.9rem; margin: 0.2rem 0; }
+    .contact-photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      border: 2px solid rgba(255,255,255,0.15);
+      flex-shrink: 0;
+    }
 
     footer {
       text-align: center;
@@ -878,17 +889,31 @@
 
     <div class="contact-grid">
       <div class="contact-card">
-        <div class="role"
-             data-pl="Kontakt z organizatorem"
-             data-en="Tournament Organizer">Kontakt z organizatorem</div>
-        <p>Mobile: <a href="tel:+48605319990">+48 605 319 990</a></p>
-        <p><a href="mailto:skt.perfectdance@gmail.com">skt.perfectdance@gmail.com</a></p>
-        <p><a href="mailto:alicja.majewska@icloud.com">alicja.majewska@icloud.com</a></p>
+        <div class="contact-card-inner">
+          <div class="contact-card-info">
+            <div class="name">Alicja Majewska</div>
+            <div class="role"
+                 data-pl="Koordynator turnieju"
+                 data-en="Tournament Coordinator">Koordynator turnieju</div>
+            <p>Mobile: <a href="tel:+48605319990">+48 605 319 990</a></p>
+            <p><a href="mailto:skt.perfectdance@gmail.com">skt.perfectdance@gmail.com</a></p>
+            <p><a href="mailto:alicja.majewska@icloud.com">alicja.majewska@icloud.com</a></p>
+          </div>
+          <img src="Alicja%20Majewska.jpg" alt="Alicja Majewska" class="contact-photo">
+        </div>
       </div>
       <div class="contact-card">
-        <div class="name">Michał Felzenowski</div>
-        <p>Mobile: <a href="tel:+48793140709">+48 793 140 709</a></p>
-        <p><a href="mailto:michalfelzenowski@gmail.com">michalfelzenowski@gmail.com</a></p>
+        <div class="contact-card-inner">
+          <div class="contact-card-info">
+            <div class="name">Michał Felzenowski</div>
+            <div class="role"
+                 data-pl="Kierownik organizacyjny"
+                 data-en="Organizational Manager">Kierownik organizacyjny</div>
+            <p>Mobile: <a href="tel:+48793140709">+48 793 140 709</a></p>
+            <p><a href="mailto:michalfelzenowski@gmail.com">michalfelzenowski@gmail.com</a></p>
+          </div>
+          <img src="Micha%C5%82%20Felzenowski.jpeg" alt="Michał Felzenowski" class="contact-photo">
+        </div>
       </div>
     </div>
   </section>
